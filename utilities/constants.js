@@ -1,1 +1,2 @@
-export const BASE_URL = "http://localhost:3000/summaries"
+export const BASE_URL =
+  "https://google-gmail-summarizer-backend.onrender.com/summaries";

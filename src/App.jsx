@@ -22,10 +22,10 @@ function App() {
         <div className="flex flex-col items-center my-5 group">
           <div className="card w-96 bg-base-100 card-sm shadow-sm relative">
             <div className="card-body">
-              <h2 className="card-title">{summary.title}</h2>
-              <p className="font-bold">{summary.summary}</p>
+              <div className="text-gray-400">{summary.title}</div>
+              <div className="card-title">{summary.summary}</div>
               <div className="justify-end card-actions">
-                <button className="btn">{summary.sender}</button>
+                <button className="btn">{summary.sender.split("<")[0]}</button>
               </div>
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 justify-center card-actions">
                 {" "}
